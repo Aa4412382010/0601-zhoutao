@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    min-height: 100vh;
+}
+
+header{
+    color: #888;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #456ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul{
+    display: flex;
+    align-items: baseline;
+    list-style-type: none;
+}
+
+header nav li{
+    margin-right: 15px;
+}
+
+button {
+    padding: 8px 25px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #456ccc;
+}
+
+.wrapper{
+    display: flex;
+    flex: 1;
+}
+
+.sidebar{
+    flex:1;
+    padding: 20px;
+    margin-right: 10px;
+    background: #eee;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.sidebar ul>li {
+    padding: 5px 0;
+}
+
+.done, .similar {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.done h3, .similar h3{
+    border-bottom: 1px solid #333;
+}
+
+.done ul {
+    text-decoration-line: line-through;
+}
+
+.similar ul {
+    font-weight: bold;
+}
+
+.main {
+    flex: 4;
+    padding: 10px;
+    background: #eee;
+}
+
+.main h2 {
+    font-size: 32px;
+    margin: 10px;
+    color: #456ccc;
+    border-bottom: 1px solid #222;
+}
+
+.main li{
+    font-size: 12px;
+    list-style-type: none;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+
+.today-list,.not-today{
+    background: #fff;
+}
+
+.add{
+    background: #fff;
+    height: 200px;
+}
+
+.add-item{
+    padding: 10px;
+    font-size: 15px;
+    position: relative;
+}
+
+.add-item p{
+    position: absolute;
+    right: 35%;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+}
+.add-item input{
+    text-align: center;
+}
+
+.add-item input[type=text]{
+    width:50%;
+}
+.add-item input[type=datetime]{
+    width: 25%;
+}
+
+.add-item input[type=submit]{
+    width:50px;
+    margin-right: 10px;
+}
+
+.add-item input[type=reset]{
+    width:50px;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 10px;
+    padding: 20px 0;
+    background-color: #456ccc;
+}
+
+footer p {
+    color: #434344;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.important {
+    color: red;
+    font-weight: 900;
+}
+
+.todo-title {
+    font-size: 28px;
+    text-align: center;
+    background-color: #456ccc;
+    /* 贴到顶部 */
+    position: sticky;
+    top: -1px;
+}
+
+.todo-info {
+    background-color: yellow;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+.to-info{
+    display: flex;
+    flex: 1;
+}
+.to-info ul{
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: auto;
+}
+.to-top{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    border: 1px solid yellow;
+    position: fixed;
+    right: 10px;
+    bottom: 15%;
+}
+.today-list,.not-today{
+    flex: 1;
+}
+.not-today{
+    margin-left:5px; 
+}
+.to-info h2{
+    text-align: center;
+}
+.important,.soso{
+    padding-right:2px; 
+}

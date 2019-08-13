@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/shopping.css">
+    <title>JD购物车</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="top-menu">
+            <div class="choice">
+                <li>
+                    <form action="" method="get">
+                        <label>语言:</label>
+                        <select name="jumpmenu" id="jumpmenu">
+                            <option value="english">English
+                            </option>
+                            <option value="chinese" selected>Chinese
+                            </option>
+                        </select>
+                    </form>
+                </li>
+                <li>
+                    <form action="" method="get">
+                        <label>货币:</label>
+                        <select name="jumpmenu" id="jump-menu">
+                            <option value="usd">USD
+                            </option>
+                            <option value="cny" selected>CNY
+                            </option>
+                        </select>
+                    </form>
+                </li>
+            </div>
+            <div class="mini-menu">
+                <li><a href="#">
+                        商城首页</a></li>
+                <li><a href="#">
+                        我的商场</a></li>
+                <li><a href="#">
+                        购物车</a></li>
+                <li><a href="#">
+                        登录</a></li>
+                <li><a href="#">
+                        注册</a></li>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="top-info">
+            <div>
+                <a href=""><img src="images/timg.jpg" alt="">
+                </a>
+            </div>
+            <div style="margin-top:50.9px;">
+                <a href="#">购物车</a>
+            </div>
+            <div style="margin-left:321px;">
+                <input type="text" placeholder="京东自营">
+                <button>搜索</button>
+            </div>
+        </div>
+        <div class="address">
+            <form action="save.action" method="post">
+                <div id="div_province">
+                    <select name="add_p" id="add_p" class="areainput">
+                        <option>请选择省市</option>
+                    </select>
+                    <select name="add_c" id="add_c" class="areainput">
+                        <option>请选择市</option>
+                    </select>
+                    <select name="add_a" id="add_a" class="areainput">
+                        <option>请选择区县</option>
+                    </select>
+                </div>
+            </form>
+            <input type="text">
+            <button>确认</button>
+        </div>
+        <div class="cart">
+            <div class="top">
+                <div class="top-line">
+                    <input type="checkbox" name="check-all" id="check-all">
+                    <label for="check-all">全选</label></div>
+                <div class="top-line info">商品</div>
+                <div class="top-line unit">单价</div>
+                <div class="top-line count">数量</div>
+                <div class="top-line little-total">小计</div>
+                <div class="top-line action">操作</div>
+            </div>
+            <div id="buy-all">
+                <div class="shop">
+                    <label for="shop-jd">
+                        <input type="checkbox" name="shop-jd" class="shop-check">
+                        <span class="shop-name">京东自营</span>
+                    </label>
+                </div>
+                <div>
+                    <div class="buy-other">
+                        <a href="#">换购</a>
+                    </div>
+                    <div class="item-to-buy" id="item-1">
+                        <div class="item-line">
+                            <input type="checkbox" name="item-check" class="item-check-jd">
+                        </div>
+                        <div class="item-line">
+                            <img class="item-img" src="images/1.jpg" alt="item-1">
+                        </div>
+                        <div class="item-line">
+                            <div class="item-info"><a href="https://item.jd.com/967962.html">
+                                    统一 阿萨姆奶茶 原味奶茶 500ml*15瓶 整箱 精选喜马拉雅山麓红茶</a></div>
+                        </div>
+                        <div class="item-line" title="阿萨姆奶茶500ml*15瓶">
+                            <div class="size">
+                                阿萨姆奶茶500ml*15瓶</div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-price-1 unit">￥49.90</div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-count count">
+                                <button name="count" class="count-1">-</button>
+                                <p>1</p>
+                                <button name="count" class="count-1">+</button>
+                            </div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-price-all-1 little-total">￥49.90</div>
+                        </div>
+                        <a href="#" class="action">删除</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="buy-other">
+                        <a href="#">换购</a>
+                    </div>
+                    <div class="item-to-buy" id="item-2">
+                        <div class="item-line">
+                            <input type="checkbox" name="item-check" class="item-check-jd">
+                        </div>
+                        <div class="item-line">
+                            <img class="item-img" src="images/2.jpg" alt="item-2">
+                        </div>
+                        <div class="item-line">
+                            <div class="item-info"><a href="https://item.jd.com/1150551.html">
+                                    百草味 坚果干果休闲零食特产 每日坚果炒货孕妇 奶油味夏威夷果200g/袋（内含开果器）
+                                </a></div>
+                        </div>
+                        <div class="item-line" title="夏威夷果100gX2">
+                            <div class="size">
+                                夏威夷果100gX2</div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-price-2 unit">￥29.90</div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-count count">
+                                <button name="count" class="count-2">-</button>
+                                <p>1</p>
+                                <button name="count" class="count-2" >+</button>
+                            </div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-price-all-2 little-total">￥29.90</div>
+                        </div>
+                        <a href="#" class="action">删除</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="buy-other">
+                        <a href="#">换购</a>
+                    </div>
+                    <div class="item-to-buy" id="item-5">
+                        <div class="item-line">
+                            <input type="checkbox" name="item-check" class="item-check-jd">
+                        </div>
+                        <div class="item-line">
+                            <img class="item-img" src="images/5.jpg" alt="item-5">
+                        </div>
+                        <div class="item-line">
+                            <div class="item-info">
+                                <a href="https://item.jd.com/100003490396.html">
+                                    外星人Alienware Aurora水冷游戏台式电脑主机(八代i7-8700 16G 256GSSD 1T RX580X 8G独显 850W 三年上门)</a>
+                            </div>
+                        </div>
+                        <div class="item-line"
+                            title="外星人Alienware Aurora台式电脑主机(八代i7-8700 16G 256GSSD 1T RX580X 8G独显 850W 三年上门)">
+                            <div class="size">
+                                外星人Alienware Aurora水冷游戏台式电脑主机(八代i7-8700 16G 256GSSD 1T RX580X 8G独显 850W 三年上门)
+                            </div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-price-5 unit">￥13499.00</div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-count count">
+                                <button name="count" class="count-5">-</button>
+                                <p>1</p>
+                                <button name="count" class="count-5">+</button>
+                            </div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-price-all-5 little-total">￥13499.00</div>
+                        </div>
+                        <a href="#" class="action">删除</a>
+                    </div>
+                </div>
+                <div class="shop">
+                    <label for="shop-semir">
+                        <input type="checkbox" name="shop-semir" class="shop-check">
+                        <span class="shop-name">森马旗舰店</span>
+                    </label>
+                </div>
+                <div>
+                    <div class="buy-other">
+                        <a href="#">换购</a>
+                    </div>
+                    <div class="item-to-buy" id="item-4">
+                        <div class="item-line">
+                            <input type="checkbox" name="item-check" class="item-check-semir">
+                        </div>
+                        <div class="item-line">
+                            <img class="item-img" src="images/4.jpg" alt="item-4">
+                        </div>
+                        <div class="item-line">
+                            <div class="item-info"><a href="https://item.jd.com/45345912747.html">
+                                    森马休闲鞋男鞋春夏飞织鞋子男网面休闲运动鞋潮鞋子男士百搭网鞋透气 黑黄色-A款 44
+                                </a></div>
+                        </div>
+                        <div class="item-line" title="黑黄色-A款">
+                            <div class="size">
+                                黑黄色-A款
+                            </div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-price-4 unit">￥179.00</div>
+                        </div>
+                        <div class="item-line">
+
+                            <div class="item-count count">
+                                <button name="count" class="count-4">-</button>
+                                <p>1</p>
+                                <button name="count" class="count-4">+</button>
+                            </div>
+
+                        </div>
+                        <div class="item-line">
+                            <div class="item-price-all-4 little-total">￥179.00</div>
+                        </div>
+                        <a href="#" class="action">删除</a>
+                    </div>
+                </div>
+                <div class="shop">
+                    <label for="shop-siut">
+                        <input type="checkbox" name="shop-siut" class="shop-check">
+                        <span class="shop-name">思惠拓旗舰店</span>
+                    </label>
+                </div>
+                <div>
+                    <div class="buy-other">
+                        <a href="#">换购</a>
+                    </div>
+                    <div class="item-to-buy" id="item-3">
+                        <div class="item-line">
+                            <input type="checkbox" name="item-check" class="item-check-siut">
+                        </div>
+                        <div class="item-line">
+                            <img class="item-img" src="images/3.jpg" alt="item-3">
+                        </div>
+                        <div class="item-line">
+                            <div class="item-info"><a href="https://item.jd.com/13035392301.html">
+                                    思惠拓（siut） 多媒体教学一体机会议平板触控显示器幼儿园电视电脑电子白板触摸屏大屏广告机 49/50英寸 安卓(无支架)</a>
+                            </div>
+                        </div>
+                        <div class="item-line" title="安卓(无支架)">
+                            <div class="size">
+                                安卓(无支架)
+                            </div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-price-3 unit">￥3766.00</div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-count count">
+                                <button name="count" class="count-3">-</button>
+                                <p>1</p>
+                                <button name="count" class="count-3">+</button>
+                            </div>
+                        </div>
+                        <div class="item-line">
+                            <div class="item-price-all-3 little-total">￥3766.00</div>
+                        </div>
+                        <a href="#" class="action">删除</a>
+                    </div>
+                </div>
+            </div>
+            <div class="total-all">
+                <input type="checkbox" name="check-all" id="check-all-botton">
+                <label for="check-all">全选</label>
+                <a href="#" class="delete">删除选中商品</a>
+                <a href="#" class="reset">清空购物车</a>
+                <div class="total">
+                    总价格
+                    <strong class="total-price">￥0.00</strong>
+                </div>
+                <input type="button" value="结算" class="settlement">
+            </div>
+        </div>
+        <div class="recommends">
+            <p>精品推荐</p>
+        </div>
+        <div>
+            <div class="smart-items">
+                <ul>
+                    <li class="J_smatc_0">
+                        <div class="smart-item">
+                            <div class="mt20 mb10 ac"><a href="//item.jd.com/100002288664.html"><img src="images/7.jpg"
+                                        alt=""></a></div>
+                            <div class="item-name"><a href="//item.jd.com/100002288664.html">外星人Alienware
+                                    Aurora英特尔酷睿i9水冷游戏台式主机(九代i9-9900k 32G 512GSSD 2T
+                                    RTX2080Ti 11G独显)</a></div>
+                            <div class="mt5"><span class="item-price"><em>¥</em><i>32999.00</i></span>
+                            </div>
+                            <div class="mt5"><span><em>120</em>人已购买</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="J_smatc_1">
+                        <div class="smart-item">
+                            <div class="mt20 mb10 ac"><a href="//item.jd.com/100005444196.html"><img src="images/8.jpg"
+                                        alt=""></a></div>
+                            <div class="item-name"><a href="//item.jd.com/100005444196.html">外星人Alienware
+                                    Aurora英特尔酷睿i7水冷游戏台式电脑主机(i7-9700K 16G 256G 1T GTX1660Ti
+                                    6G 三年上门)</a></div>
+                            <div class="mt5"><span class="item-price"><em>¥</em><i>13999.00</i></span>
+                            </div>
+                            <div class="mt5"><span><em>105</em>人已购买</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="J_smatc_2">
+                        <div class="smart-item">
+                            <div class="mt20 mb10 ac"><a href="//item.jd.com/8462617.html"><img src="images/9.jpg"
+                                        alt=""></a></div>
+                            <div class="item-name"><a href="//item.jd.com/8462617.html">掠夺者 Orion3000电竞台式机
+                                    游戏台式电脑主机（八代i7-8700 16G 256GSSD＋1T GTX1080 8G独显
+                                    500w电源）</a></div>
+                            <div class="mt5"><span class="item-price"><em>¥</em><i>9999.00</i></span>
+                            </div>
+                            <div class="mt5"><span><em>54</em>人已购买</span></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="service-2017">
+            <div class="w">
+                <ol class="slogen">
+                    <li class="item fore1">
+                        品类齐全，轻松购物
+                    </li>
+                    <li class="item fore2">
+                        多仓直发，极速配送
+                    </li>
+                    <li class="item fore3">
+                        正品行货，精致服务
+                    </li>
+                </ol>
+            </div>
+            <div class="jd-help">
+                <div class="w">
+                    <div class="wrap">
+                        <dl class="fore1">
+                            <dt>购物指南</dt>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-29.html">购物流程</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-151.html">会员介绍</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank"
+                                    href="//help.jd.com/user/issue/list-297.html">生活旅行/团购</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue.html">常见问题</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-136.html">大家电</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/custom.html">联系客服</a>
+                            </dd>
+                        </dl>
+                        <dl class="fore2">
+                            <dt>配送方式</dt>
+                            <dd>
+                                <a rel="nofollow" target="_blank"
+                                    href="//help.jd.com/user/issue/list-81-100.html">上门自提</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank"
+                                    href="//help.jd.com/user/issue/list-81.html">211限时达</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank"
+                                    href="//help.jd.com/user/issue/103-983.html">配送服务查询</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank"
+                                    href="//help.jd.com/user/issue/109-188.html">配送费收取标准</a>
+                            </dd>
+                            <dd>
+                                <a target="_blank" href="//help.joybuy.com/help/question-list-201.html">海外配送</a>
+                            </dd>
+                        </dl>
+                        <dl class="fore3">
+                            <dt>支付方式</dt>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-172.html">货到付款</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-173.html">在线支付</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-176.html">分期付款</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-174.html">邮局汇款</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-175.html">公司转账</a>
+                            </dd>
+                        </dl>
+                        <dl class="fore4">
+                            <dt>售后服务</dt>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/321-981.html">售后政策</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-132.html">价格保护</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/130-978.html">退款说明</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//myjd.jd.com/repair/repairs.action">返修/退换货</a>
+                            </dd>
+                            <dd>
+                                <a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-50.html">取消订单</a>
+                            </dd>
+                        </dl>
+                        <span class="clr"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/shopping.js"></script>
+</body>
+
+</html>

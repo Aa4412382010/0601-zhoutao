@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/memo.css">
+    <title>51memo</title>
+</head>
+
+<body>
+    <a name="top"></a>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">帮助</a></li>
+                </ul>
+            </nav>
+            <div class="find">
+                <input type="text" value="">
+                <button class="find-in">搜索</button>
+            </div>
+            <div class="info">
+                <button>登录</button>
+                <button>注册</button>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <aside class="sidebar">
+
+                <div class="done">
+                    <h3>已完成</h3>
+                    <ul id="done-list">
+                    </ul>
+                </div>
+                <div class="similar">
+                    <h3>未完成</h3>
+                    <ul id="todo-list">
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="main">
+                <div class="to-info">
+                    <div class="today-list">
+                        <h2>今日计划</h2>
+                        <ul>
+                            <div class="important" id="important">
+                                <div class="todo-title hidden">非常重要</div>
+                            </div>
+                            <div class="ordinary" id="ordinary">
+                                <div class="todo-title hidden">重要</div>
+                            </div>
+                            <div class="soso" id="soso">
+                                <div class="todo-title  hidden">简单</div>
+                            </div>
+                            <div class="easy" id="easy">
+                                <div class="todo-title  hidden">轻松</div>
+                            </div>
+                        </ul>
+                        <div class="todo-info">暂无事项</div>
+                    </div>
+                    <div class="not-today">
+                        <h2>后续计划</h2>
+                        <ul>
+                            <div class="important" id="todo-important">
+                                <div class="todo-title hidden">非常重要</div>
+                            </div>
+                            <div class="ordinary" id="todo-ordinary">
+                                <div class="todo-title hidden">重要</div>
+                            </div>
+                            <div class="soso" id="todo-soso">
+                                <div class="todo-title  hidden">简单</div>
+                            </div>
+                            <div class="easy" id="todo-easy">
+                                <div class="todo-title  hidden">轻松</div>
+                            </div>
+                        </ul>
+                        <div class="todo-info">暂无事项</div>
+                    </div>
+                </div>
+                <div class="add">
+                    <h2>添加备忘录</h2>
+                    <div class="add-item">
+                        <form action="">
+                            <label for="item">输入事件: <input type="text" id="new-item" placeholder="任何需要做的事"></label>
+                            <label class="time">日期选择<input type="datetime-local" ></label>
+                            <div>
+                                <label for="" class="important">非常重要
+                                    <input type="radio" value="1" name="choose" checked>
+                                </label>
+                                <label for="">重要
+                                    <input type="radio" value="2" name="choose">
+                                </label>
+                                <label for="">简单
+                                    <input type="radio" value="3" name="choose">
+                                </label>
+                                <label for="">轻松
+                                    <input type="radio" value="4" name="choose">
+                                </label>
+                            </div>
+                            <p>
+                                <input type="submit" value="添加">
+                                <input type="reset" value="重置">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <a href="#top" class="to-top">TOP</a>
+        <footer>
+            <h3>页脚部分</h3>
+            <p>51备忘录v0.410</p>
+        </footer>
+
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/memo.js"></script>
+</body>
+
+</html>
